@@ -46,6 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class_Conexion.cs" />
+    <Compile Include="Class_Usuarios.cs" />
+    <Compile Include="FrmContenedorAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmContenedorAdmin.Designer.cs">
+      <DependentUpon>FrmContenedorAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmUsers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +62,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmContenedorAdmin.resx">
+      <DependentUpon>FrmContenedorAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmUsers.resx">
       <DependentUpon>FrmUsers.cs</DependentUpon>
     </EmbeddedResource>

@@ -64,6 +64,8 @@ namespace facturacionApp
             this.Barratitulo.Name = "Barratitulo";
             this.Barratitulo.Size = new System.Drawing.Size(358, 36);
             this.Barratitulo.TabIndex = 9;
+            this.Barratitulo.Paint += new System.Windows.Forms.PaintEventHandler(this.Barratitulo_Paint);
+            this.Barratitulo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Barratitulo_MouseMove);
             // 
             // BtnMinLog
             // 
@@ -76,6 +78,7 @@ namespace facturacionApp
             this.BtnMinLog.Size = new System.Drawing.Size(40, 34);
             this.BtnMinLog.TabIndex = 2;
             this.BtnMinLog.UseVisualStyleBackColor = false;
+            this.BtnMinLog.Click += new System.EventHandler(this.BtnMinLog_Click);
             // 
             // BtnCerrarLogin
             // 
@@ -88,6 +91,7 @@ namespace facturacionApp
             this.BtnCerrarLogin.Size = new System.Drawing.Size(40, 34);
             this.BtnCerrarLogin.TabIndex = 1;
             this.BtnCerrarLogin.UseVisualStyleBackColor = false;
+            this.BtnCerrarLogin.Click += new System.EventHandler(this.BtnCerrarLogin_Click);
             // 
             // LinkLabel1
             // 
@@ -114,6 +118,7 @@ namespace facturacionApp
             this.BtnAcceder.TabIndex = 14;
             this.BtnAcceder.Text = "ACCEDER";
             this.BtnAcceder.UseVisualStyleBackColor = false;
+            this.BtnAcceder.Click += new System.EventHandler(this.BtnAcceder_Click);
             // 
             // panel2
             // 
@@ -142,6 +147,8 @@ namespace facturacionApp
             this.TxtContraseña.Size = new System.Drawing.Size(315, 20);
             this.TxtContraseña.TabIndex = 11;
             this.TxtContraseña.Text = "CONTRASEÑA";
+            this.TxtContraseña.Enter += new System.EventHandler(this.TxtContraseña_Enter);
+            this.TxtContraseña.Leave += new System.EventHandler(this.TxtContraseña_Leave);
             // 
             // TxtUsuario
             // 
@@ -154,6 +161,8 @@ namespace facturacionApp
             this.TxtUsuario.Size = new System.Drawing.Size(315, 20);
             this.TxtUsuario.TabIndex = 10;
             this.TxtUsuario.Text = "USUARIO";
+            this.TxtUsuario.Enter += new System.EventHandler(this.TxtUsuario_Enter);
+            this.TxtUsuario.Leave += new System.EventHandler(this.TxtUsuario_Leave);
             // 
             // FrmUsers
             // 
@@ -171,7 +180,9 @@ namespace facturacionApp
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmUsers";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmUsers";
+            this.Load += new System.EventHandler(this.FrmUsers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Barratitulo.ResumeLayout(false);
             this.ResumeLayout(false);
