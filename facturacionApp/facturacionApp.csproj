@@ -66,6 +66,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class_Conexion.cs" />
+    <Compile Include="Class_Empleados.cs" />
+    <Compile Include="Class_Facturacion.cs" />
+    <Compile Include="Class_Productos.cs" />
     <Compile Include="Class_Usuarios.cs" />
     <Compile Include="FrmComprobante.cs">
       <SubType>Form</SubType>
