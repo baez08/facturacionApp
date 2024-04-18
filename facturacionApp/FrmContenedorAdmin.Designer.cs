@@ -198,6 +198,7 @@ namespace facturacionApp
             this.BtnCerrarSesion.Text = "Cerrar sesión";
             this.BtnCerrarSesion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnCerrarSesion.UseVisualStyleBackColor = true;
+            this.BtnCerrarSesion.Click += new System.EventHandler(this.BtnCerrarSesion_Click);
             // 
             // BtnInforCuenta
             // 
@@ -238,6 +239,7 @@ namespace facturacionApp
             this.BtnCuenta.TabIndex = 13;
             this.BtnCuenta.Text = "Cuenta";
             this.BtnCuenta.UseVisualStyleBackColor = true;
+            this.BtnCuenta.Click += new System.EventHandler(this.BtnCuenta_Click);
             // 
             // BtnConfigUsu
             // 
@@ -254,6 +256,7 @@ namespace facturacionApp
             this.BtnConfigUsu.Text = "Conf. Usuarios";
             this.BtnConfigUsu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnConfigUsu.UseVisualStyleBackColor = true;
+            this.BtnConfigUsu.Click += new System.EventHandler(this.BtnConfigUsu_Click);
             // 
             // BtnConfigEmpl
             // 
@@ -270,6 +273,7 @@ namespace facturacionApp
             this.BtnConfigEmpl.Text = "Conf. Empleados";
             this.BtnConfigEmpl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnConfigEmpl.UseVisualStyleBackColor = true;
+            this.BtnConfigEmpl.Click += new System.EventHandler(this.BtnConfigEmpl_Click);
             // 
             // BtnConfigProd
             // 
@@ -286,6 +290,7 @@ namespace facturacionApp
             this.BtnConfigProd.Text = "Conf. Productos";
             this.BtnConfigProd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnConfigProd.UseVisualStyleBackColor = true;
+            this.BtnConfigProd.Click += new System.EventHandler(this.BtnConfigProd_Click);
             // 
             // panel4
             // 
@@ -334,6 +339,7 @@ namespace facturacionApp
             this.BtnConfig.TabIndex = 5;
             this.BtnConfig.Text = "Configuración";
             this.BtnConfig.UseVisualStyleBackColor = true;
+            this.BtnConfig.Click += new System.EventHandler(this.BtnConfig_Click);
             // 
             // BtnReportes
             // 
@@ -350,6 +356,7 @@ namespace facturacionApp
             this.BtnReportes.TabIndex = 4;
             this.BtnReportes.Text = "Reportes";
             this.BtnReportes.UseVisualStyleBackColor = true;
+            this.BtnReportes.Click += new System.EventHandler(this.BtnReportes_Click);
             // 
             // BtnFacturacion
             // 
@@ -366,6 +373,7 @@ namespace facturacionApp
             this.BtnFacturacion.TabIndex = 3;
             this.BtnFacturacion.Text = "Facturación";
             this.BtnFacturacion.UseVisualStyleBackColor = true;
+            this.BtnFacturacion.Click += new System.EventHandler(this.BtnFacturacion_Click);
             // 
             // BtnDashboard
             // 
@@ -382,6 +390,7 @@ namespace facturacionApp
             this.BtnDashboard.TabIndex = 2;
             this.BtnDashboard.Text = "Dashboard";
             this.BtnDashboard.UseVisualStyleBackColor = true;
+            this.BtnDashboard.Click += new System.EventHandler(this.BtnDashboard_Click);
             // 
             // label1
             // 
@@ -426,6 +435,7 @@ namespace facturacionApp
             this.Name = "FrmContenedorAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmContenedorAdmin";
+            this.Load += new System.EventHandler(this.FrmContenedorAdmin_Load);
             this.BarraTitulo.ResumeLayout(false);
             this.PanelMenu.ResumeLayout(false);
             this.PanelMenu.PerformLayout();
