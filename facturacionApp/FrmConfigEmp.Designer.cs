@@ -75,6 +75,7 @@ namespace facturacionApp
             this.BtnSalir.TabIndex = 21;
             this.BtnSalir.Text = "SALIR";
             this.BtnSalir.UseVisualStyleBackColor = false;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
             // tabControl1
             // 
@@ -102,6 +103,7 @@ namespace facturacionApp
             this.tabPage4.Size = new System.Drawing.Size(943, 425);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Ver empleados";
+            this.tabPage4.Enter += new System.EventHandler(this.tabPage4_Enter);
             // 
             // BtnBuscar1
             // 
@@ -119,6 +121,7 @@ namespace facturacionApp
             this.TxtBuscarEmp.Name = "TxtBuscarEmp";
             this.TxtBuscarEmp.Size = new System.Drawing.Size(665, 27);
             this.TxtBuscarEmp.TabIndex = 5;
+            this.TxtBuscarEmp.TextChanged += new System.EventHandler(this.TxtBuscarEmp_TextChanged);
             // 
             // label3
             // 
@@ -143,6 +146,7 @@ namespace facturacionApp
             this.DtgDatosEmp.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DtgDatosEmp.Size = new System.Drawing.Size(886, 299);
             this.DtgDatosEmp.TabIndex = 3;
+            this.DtgDatosEmp.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DtgDatosEmp_CellDoubleClick);
             // 
             // label2
             // 
@@ -216,6 +220,7 @@ namespace facturacionApp
             this.BtnBuscar2.TabIndex = 24;
             this.BtnBuscar2.Text = "       BUSCAR";
             this.BtnBuscar2.UseVisualStyleBackColor = false;
+            this.BtnBuscar2.Click += new System.EventHandler(this.BtnBuscar2_Click);
             // 
             // BtnNuevoEmp
             // 
@@ -233,6 +238,7 @@ namespace facturacionApp
             this.BtnNuevoEmp.TabIndex = 23;
             this.BtnNuevoEmp.Text = "AÑADIR";
             this.BtnNuevoEmp.UseVisualStyleBackColor = false;
+            this.BtnNuevoEmp.Click += new System.EventHandler(this.BtnNuevoEmp_Click);
             // 
             // BtnElimEmp
             // 
@@ -250,6 +256,7 @@ namespace facturacionApp
             this.BtnElimEmp.TabIndex = 22;
             this.BtnElimEmp.Text = "ELIMINAR";
             this.BtnElimEmp.UseVisualStyleBackColor = false;
+            this.BtnElimEmp.Click += new System.EventHandler(this.BtnElimEmp_Click);
             // 
             // TxtIdEmpleado
             // 
@@ -285,6 +292,7 @@ namespace facturacionApp
             this.BtnActuaEmp.TabIndex = 18;
             this.BtnActuaEmp.Text = "ACTUALIZAR";
             this.BtnActuaEmp.UseVisualStyleBackColor = false;
+            this.BtnActuaEmp.Click += new System.EventHandler(this.BtnActuaEmp_Click);
             // 
             // TxtApelEmp
             // 
@@ -356,6 +364,7 @@ namespace facturacionApp
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmConfigEmp";
             this.Text = "FrmConfigEmp";
+            this.Load += new System.EventHandler(this.FrmConfigEmp_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();

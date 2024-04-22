@@ -197,10 +197,10 @@ namespace facturacionApp
         private System.Windows.Forms.Button BtnMinLog;
         private System.Windows.Forms.Button BtnCerrarLogin;
         internal System.Windows.Forms.LinkLabel LinkLabel1;
-        private System.Windows.Forms.Button BtnAcceder;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox TxtContraseña;
         public System.Windows.Forms.TextBox TxtUsuario;
+        public System.Windows.Forms.Button BtnAcceder;
     }
 }

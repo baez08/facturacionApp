@@ -115,7 +115,7 @@ namespace facturacionApp
                 if (CU.Validar())
                 {
                     FrmContenedorAdmin FA = new FrmContenedorAdmin();
-                    //FA.Nom_Usuario.Text = TxtUsuario.Text;
+                    FA.Nom_Usuario.Text = TxtUsuario.Text;
                     this.Hide();
                     FA.Show();
                 }

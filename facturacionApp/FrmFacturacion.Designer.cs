@@ -40,9 +40,6 @@ namespace facturacionApp
             this.BtnFacturarProductos = new System.Windows.Forms.Button();
             this.BtnAñadirProducto = new System.Windows.Forms.Button();
             this.DtgDetalles = new System.Windows.Forms.DataGridView();
-            this.Empleado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Productos = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Costo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TxtDevolucion = new System.Windows.Forms.TextBox();
             this.TxtEfectivo = new System.Windows.Forms.TextBox();
             this.TxtTotal = new System.Windows.Forms.TextBox();
@@ -54,6 +51,9 @@ namespace facturacionApp
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.Empleado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Productos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Costo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DtgDetalles)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,6 +94,7 @@ namespace facturacionApp
             this.BtnRemover.TabIndex = 33;
             this.BtnRemover.Text = "ELIMINAR";
             this.BtnRemover.UseVisualStyleBackColor = false;
+            this.BtnRemover.Click += new System.EventHandler(this.BtnRemover_Click);
             // 
             // BtnSalirFacturación
             // 
@@ -111,6 +112,7 @@ namespace facturacionApp
             this.BtnSalirFacturación.TabIndex = 32;
             this.BtnSalirFacturación.Text = "SALIR";
             this.BtnSalirFacturación.UseVisualStyleBackColor = false;
+            this.BtnSalirFacturación.Click += new System.EventHandler(this.BtnSalirFacturación_Click);
             // 
             // BtnFacturarProductos
             // 
@@ -128,6 +130,7 @@ namespace facturacionApp
             this.BtnFacturarProductos.TabIndex = 31;
             this.BtnFacturarProductos.Text = "FACTURAR";
             this.BtnFacturarProductos.UseVisualStyleBackColor = false;
+            this.BtnFacturarProductos.Click += new System.EventHandler(this.BtnFacturarProductos_Click);
             // 
             // BtnAñadirProducto
             // 
@@ -145,6 +148,7 @@ namespace facturacionApp
             this.BtnAñadirProducto.TabIndex = 30;
             this.BtnAñadirProducto.Text = "AÑADIR";
             this.BtnAñadirProducto.UseVisualStyleBackColor = false;
+            this.BtnAñadirProducto.Click += new System.EventHandler(this.BtnAñadirProducto_Click);
             // 
             // DtgDetalles
             // 
@@ -189,24 +193,6 @@ namespace facturacionApp
             this.DtgDetalles.Size = new System.Drawing.Size(501, 363);
             this.DtgDetalles.TabIndex = 29;
             // 
-            // Empleado
-            // 
-            this.Empleado.HeaderText = "Barbero";
-            this.Empleado.Name = "Empleado";
-            this.Empleado.ReadOnly = true;
-            // 
-            // Productos
-            // 
-            this.Productos.HeaderText = "Productos";
-            this.Productos.Name = "Productos";
-            this.Productos.ReadOnly = true;
-            // 
-            // Costo
-            // 
-            this.Costo.HeaderText = "Costo";
-            this.Costo.Name = "Costo";
-            this.Costo.ReadOnly = true;
-            // 
             // TxtDevolucion
             // 
             this.TxtDevolucion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -225,6 +211,7 @@ namespace facturacionApp
             this.TxtEfectivo.Size = new System.Drawing.Size(269, 27);
             this.TxtEfectivo.TabIndex = 27;
             this.TxtEfectivo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TxtEfectivo.TextChanged += new System.EventHandler(this.TxtEfectivo_TextChanged);
             // 
             // TxtTotal
             // 
@@ -246,6 +233,7 @@ namespace facturacionApp
             this.CbbProducto.Name = "CbbProducto";
             this.CbbProducto.Size = new System.Drawing.Size(269, 29);
             this.CbbProducto.TabIndex = 25;
+            this.CbbProducto.Enter += new System.EventHandler(this.CbbProducto_Enter);
             // 
             // CbbBarbero
             // 
@@ -257,6 +245,7 @@ namespace facturacionApp
             this.CbbBarbero.Name = "CbbBarbero";
             this.CbbBarbero.Size = new System.Drawing.Size(269, 29);
             this.CbbBarbero.TabIndex = 24;
+            this.CbbBarbero.Enter += new System.EventHandler(this.CbbBarbero_Enter);
             // 
             // label6
             // 
@@ -309,9 +298,9 @@ namespace facturacionApp
             this.label2.ForeColor = System.Drawing.Color.LightGray;
             this.label2.Location = new System.Drawing.Point(51, 137);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 22);
+            this.label2.Size = new System.Drawing.Size(81, 22);
             this.label2.TabIndex = 19;
-            this.label2.Text = "Barbero :";
+            this.label2.Text = "Cajero :";
             // 
             // label1
             // 
@@ -323,6 +312,24 @@ namespace facturacionApp
             this.label1.Size = new System.Drawing.Size(389, 38);
             this.label1.TabIndex = 18;
             this.label1.Text = "AREA DE FACTURACIÓN";
+            // 
+            // Empleado
+            // 
+            this.Empleado.HeaderText = "Cajero";
+            this.Empleado.Name = "Empleado";
+            this.Empleado.ReadOnly = true;
+            // 
+            // Productos
+            // 
+            this.Productos.HeaderText = "Productos";
+            this.Productos.Name = "Productos";
+            this.Productos.ReadOnly = true;
+            // 
+            // Costo
+            // 
+            this.Costo.HeaderText = "Costo";
+            this.Costo.Name = "Costo";
+            this.Costo.ReadOnly = true;
             // 
             // FrmFacturacion
             // 
@@ -351,6 +358,7 @@ namespace facturacionApp
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmFacturacion";
             this.Text = "FrmFacturacion";
+            this.Load += new System.EventHandler(this.FrmFacturacion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DtgDetalles)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -366,9 +374,6 @@ namespace facturacionApp
         private System.Windows.Forms.Button BtnFacturarProductos;
         private System.Windows.Forms.Button BtnAñadirProducto;
         private System.Windows.Forms.DataGridView DtgDetalles;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Empleado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Productos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Costo;
         private System.Windows.Forms.TextBox TxtDevolucion;
         private System.Windows.Forms.TextBox TxtEfectivo;
         private System.Windows.Forms.TextBox TxtTotal;
@@ -380,5 +385,8 @@ namespace facturacionApp
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Empleado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Productos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Costo;
     }
 }

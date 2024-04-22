@@ -72,6 +72,7 @@ namespace facturacionApp
             this.BtnSalir.TabIndex = 18;
             this.BtnSalir.Text = "SALIR";
             this.BtnSalir.UseVisualStyleBackColor = false;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
             // tabControl1
             // 
@@ -98,6 +99,7 @@ namespace facturacionApp
             this.tabPage4.Size = new System.Drawing.Size(943, 425);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Ver productos";
+            this.tabPage4.Enter += new System.EventHandler(this.tabPage4_Enter);
             // 
             // TxtBuscarProd
             // 
@@ -105,6 +107,7 @@ namespace facturacionApp
             this.TxtBuscarProd.Name = "TxtBuscarProd";
             this.TxtBuscarProd.Size = new System.Drawing.Size(670, 27);
             this.TxtBuscarProd.TabIndex = 5;
+            this.TxtBuscarProd.TextChanged += new System.EventHandler(this.TxtBuscarProd_TextChanged);
             // 
             // label3
             // 
@@ -126,6 +129,7 @@ namespace facturacionApp
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(886, 299);
             this.dataGridView1.TabIndex = 3;
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // label2
             // 
@@ -175,6 +179,7 @@ namespace facturacionApp
             this.BtnBuscar2.TabIndex = 24;
             this.BtnBuscar2.Text = "       BUSCAR";
             this.BtnBuscar2.UseVisualStyleBackColor = false;
+            this.BtnBuscar2.Click += new System.EventHandler(this.BtnBuscar2_Click);
             // 
             // BtnNuevoProd
             // 
@@ -192,6 +197,7 @@ namespace facturacionApp
             this.BtnNuevoProd.TabIndex = 23;
             this.BtnNuevoProd.Text = "AÑADIR";
             this.BtnNuevoProd.UseVisualStyleBackColor = false;
+            this.BtnNuevoProd.Click += new System.EventHandler(this.BtnNuevoProd_Click);
             // 
             // BtnElimProd
             // 
@@ -209,6 +215,7 @@ namespace facturacionApp
             this.BtnElimProd.TabIndex = 22;
             this.BtnElimProd.Text = "ELIMINAR";
             this.BtnElimProd.UseVisualStyleBackColor = false;
+            this.BtnElimProd.Click += new System.EventHandler(this.BtnElimProd_Click);
             // 
             // TxtIdProd
             // 
@@ -244,6 +251,7 @@ namespace facturacionApp
             this.BtnActuaProd.TabIndex = 18;
             this.BtnActuaProd.Text = "ACTUALIZAR";
             this.BtnActuaProd.UseVisualStyleBackColor = false;
+            this.BtnActuaProd.Click += new System.EventHandler(this.BtnActuaProd_Click);
             // 
             // TxtPrecioProd
             // 
@@ -315,6 +323,7 @@ namespace facturacionApp
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmConfigProd";
             this.Text = "FrmConfigProd";
+            this.Load += new System.EventHandler(this.FrmConfigProd_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();

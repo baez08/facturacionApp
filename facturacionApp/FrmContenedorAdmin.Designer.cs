@@ -31,10 +31,10 @@ namespace facturacionApp
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmContenedorAdmin));
             this.BarraTitulo = new System.Windows.Forms.Panel();
-            this.BtnMax1 = new System.Windows.Forms.Button();
             this.BtnMax2 = new System.Windows.Forms.Button();
             this.BtnMinLog = new System.Windows.Forms.Button();
             this.BtnCerrarLogin = new System.Windows.Forms.Button();
+            this.BtnMax1 = new System.Windows.Forms.Button();
             this.PanelMenu = new System.Windows.Forms.Panel();
             this.Nom_Usuario = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -75,20 +75,6 @@ namespace facturacionApp
             this.BarraTitulo.TabIndex = 1;
             this.BarraTitulo.Paint += new System.Windows.Forms.PaintEventHandler(this.BarraTitulo_Paint);
             this.BarraTitulo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseMove);
-            // 
-            // BtnMax1
-            // 
-            this.BtnMax1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnMax1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.BtnMax1.FlatAppearance.BorderSize = 0;
-            this.BtnMax1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMax1.Image = ((System.Drawing.Image)(resources.GetObject("BtnMax1.Image")));
-            this.BtnMax1.Location = new System.Drawing.Point(1124, 1);
-            this.BtnMax1.Name = "BtnMax1";
-            this.BtnMax1.Size = new System.Drawing.Size(40, 34);
-            this.BtnMax1.TabIndex = 6;
-            this.BtnMax1.UseVisualStyleBackColor = false;
-            this.BtnMax1.Click += new System.EventHandler(this.BtnMax1_Click);
             // 
             // BtnMax2
             // 
@@ -133,6 +119,20 @@ namespace facturacionApp
             this.BtnCerrarLogin.UseVisualStyleBackColor = false;
             this.BtnCerrarLogin.Click += new System.EventHandler(this.BtnCerrarLogin_Click);
             // 
+            // BtnMax1
+            // 
+            this.BtnMax1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnMax1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.BtnMax1.FlatAppearance.BorderSize = 0;
+            this.BtnMax1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMax1.Image = ((System.Drawing.Image)(resources.GetObject("BtnMax1.Image")));
+            this.BtnMax1.Location = new System.Drawing.Point(1124, 1);
+            this.BtnMax1.Name = "BtnMax1";
+            this.BtnMax1.Size = new System.Drawing.Size(40, 34);
+            this.BtnMax1.TabIndex = 6;
+            this.BtnMax1.UseVisualStyleBackColor = false;
+            this.BtnMax1.Click += new System.EventHandler(this.BtnMax1_Click);
+            // 
             // PanelMenu
             // 
             this.PanelMenu.AutoScroll = true;
@@ -169,8 +169,9 @@ namespace facturacionApp
             this.Nom_Usuario.ForeColor = System.Drawing.Color.LightGray;
             this.Nom_Usuario.Location = new System.Drawing.Point(3, 102);
             this.Nom_Usuario.Name = "Nom_Usuario";
-            this.Nom_Usuario.Size = new System.Drawing.Size(0, 19);
+            this.Nom_Usuario.Size = new System.Drawing.Size(146, 19);
             this.Nom_Usuario.TabIndex = 18;
+            this.Nom_Usuario.Text = "nombre de usario";
             // 
             // label2
             // 
